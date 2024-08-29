@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Amplification Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>DNS Amplification Attack Detection</h1>
+    <form id="dns-form">
+        <textarea id="dns-input" rows="10" cols="50" placeholder='[{"IPsrc":"192.168.1.10", "IPdest":"8.8.8.8", "Psrc":12345, "Pdest":53, "Prot":"UDP", "Bytes":512, "QID":2}]'></textarea><br>
+        <button type="submit">Submit DNS Responses</button>
+    </form>
+    <div id="results">
+        <h2>Suspicious IPs</h2>
+        <ul id="suspicious-ips"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
